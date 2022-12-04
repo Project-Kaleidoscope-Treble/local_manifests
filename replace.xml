@@ -1,36 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 <remote name="phh" fetch="https://github.com/phhusson/" />
+<remote name="kscope-treble" fetch="https://github.com/Project-Kaleidoscope-Treble/" />
 
-<remove-project name="platform/system/core" />
-<project path="system/core" name="platform_system_core" remote="phh" revision="android-12.1.0_r11-phh" />
-
-<remove-project name="platform/frameworks/native" />
-<project path="frameworks/native" name="platform_frameworks_native" remote="phh" revision="android-12.1.0_r11-phh" />
-
-<remove-project name="platform/system/vold" />
-<project path="system/vold" name="platform_system_vold" remote="phh" revision="android-12.1.0_r11-phh" />
-
-<remove-project name="platform/system/bt" />
-<project path="system/bt" name="platform_system_bt" remote="phh" revision="android-12.1.0_r11-phh" />
-
+<!-- phhusson part -->
 <remove-project name="platform/external/selinux" />
 <project path="external/selinux" name="platform_external_selinux" remote="phh" revision="android-12.1.0_r11-phh" />
 
-<remove-project name="platform/bootable/recovery" />
-<project path="bootable/recovery" name="platform_bootable_recovery" remote="phh" revision="android-12.1.0_r11-phh" />
-
-<remove-project name="platform/frameworks/av" />
-<project path="frameworks/av" name="platform_frameworks_av" remote="phh" revision="android-12.1.0_r11-phh" />
-
-<remove-project name="platform/frameworks/base" />
-<project path="frameworks/base" name="platform_frameworks_base" remote="phh" revision="android-12.1.0_r11-phh" />
-
 <remove-project name="platform/system/extras" />
 <project path="system/extras" name="platform_system_extras" remote="phh" revision="android-12.1.0_r11-phh" />
-
-<remove-project name="platform/frameworks/opt/telephony" />
-<project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="phh" revision="android-12.1.0_r11-phh" />
 
 <remove-project name="platform/system/netd" />
 <project path="system/netd" name="platform_system_netd" remote="phh" revision="android-12.1.0_r11-phh" />
@@ -38,31 +16,57 @@
 <remove-project name="platform/system/nfc" />
 <project path="system/nfc" name="platform_system_nfc" remote="phh" revision="android-12.1.0_r11-phh" />
 
-<remove-project name="platform/packages/apps/Settings" />
-<project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="phh" revision="android-12.1.0_r11-phh" />
-
-<remove-project name="platform/packages/apps/Bluetooth" />
-<project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="phh" revision="android-12.1.0_r11-phh" />
-
-<remove-project name="platform/packages/modules/Wifi" />
-<project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" remote="phh" revision="android-12.1.0_r11-phh" />
-
 <remove-project name="platform/system/bpf" />
 <project path="system/bpf" name="platform_system_bpf" remote="phh" revision="android-12.1.0_r11-phh" />
-
-<remove-project name="platform/bionic" />
-<project path="bionic" name="platform_bionic" remote="phh" revision="android-12.1.0_r11-phh" />
-
 <remove-project name="platform/system/linkerconfig" />
 <project path="system/linkerconfig" name="platform_system_linkerconfig" remote="phh" revision="android-12.1.0_r11-phh" />
 
 <remove-project name="platform/frameworks/opt/net/ims" />
 <project path="frameworks/opt/net/ims" name="platform_frameworks_opt_net_ims" remote="phh" revision="android-12.1.0_r11-phh" />
+<!-- End of phhusson part -->
 
-<remove-project name="platform/hardware/interfaces" />
-<project path="hardware/interfaces" name="platform_hardware_interfaces" remote="phh" revision="android-12.1.0_r11-phh" />
+<!-- Project-Kaleidoscope-Treble part -->
+<remove-project name="android_system_core" />
+<project path="system/core" name="android_system_core" remote="kscope-treble" revision="sunflowerleaf" />
 
-<remove-project name="platform/system/security" />
-<project path="system/security" name="platform_system_security" remote="phh" revision="android-12.1.0_r11-phh" />
+<remove-project name="android_frameworks_native" />
+<project path="frameworks/native" name="android_frameworks_native" remote="kscope-treble" revision="sunflowerleaf" />
+
+<remove-project name="android_system_vold" />
+<project path="system/vold" name="android_system_vold" remote="kscope-treble" revision="sunflowerleaf" />
+
+<remove-project name="android_system_bt" />
+<project path="system/bt" name="android_system_bt" remote="kscope-treble" revision="sunflowerleaf" />
+
+<remove-project name="android_system_security" />
+<project path="system/security" name="android_system_security" remote="kscope-treble" revision="sunflowerleaf" />
+
+<remove-project name="android_bootable_recovery" />
+<project path="bootable/recovery" name="android_bootable_recovery" remote="kscope-treble" revision="sunflowerleaf" />
+
+<remove-project name="android_frameworks_av" />
+<project path="frameworks/av" name="android_frameworks_av" remote="kscope-treble" revision="sunflowerleaf" />
+
+<remove-project name="android_frameworks_base" />
+<project path="frameworks/base" name="android_frameworks_base" remote="kscope-treble" revision="sunflowerleaf" />
+
+<remove-project name="android_frameworks_opt_telephony" />
+<project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="kscope-treble" revision="sunflowerleaf" />
+
+<remove-project name="android_packages_apps_Settings" />
+<project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="kscope-treble" revision="sunflowerleaf" />
+
+<remove-project name="android_packages_apps_Bluetooth" />
+<project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="kscope-treble" revision="sunflowerleaf" />
+
+<remove-project name="android_packages_modules_Wifi" />
+<project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="kscope-treble" revision="sunflowerleaf" />
+
+<remove-project name="android_hardware_interfaces" />
+<project path="hardware/interfaces" name="android_hardware_interfaces" remote="kscope-treble" revision="sunflowerleaf" />
+
+<remove-project name="android_bionic" />
+<project path="bionic" name="android_bionic" remote="kscope-treble" revision="sunflowerleaf" />
+<!-- End of Project-Kaleidoscope-Treble part -->
 
 </manifest>
