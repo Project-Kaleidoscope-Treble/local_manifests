@@ -23,6 +23,9 @@
 <!-- End of phhusson part -->
 
 <!-- Project-Kaleidoscope-Treble part -->
+<remove-project name="device_phh_treble" />
+<project path="device/phh/treble" name="android_device_phh_treble" remote="kscope-treble" revision="sunflowerleaf" />
+
 <remove-project name="android_system_core" />
 <project path="system/core" name="android_system_core" remote="kscope-treble" revision="sunflowerleaf" />
 
