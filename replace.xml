@@ -13,9 +13,6 @@
 <remove-project name="platform/system/netd" />
 <project path="system/netd" name="platform_system_netd" remote="phh" revision="android-12.1.0_r11-phh" />
 
-<remove-project name="platform/system/nfc" />
-<project path="system/nfc" name="platform_system_nfc" remote="phh" revision="android-12.1.0_r11-phh" />
-
 <remove-project name="platform/system/bpf" />
 <project path="system/bpf" name="platform_system_bpf" remote="phh" revision="android-12.1.0_r11-phh" />
 <remove-project name="platform/system/linkerconfig" />
@@ -67,6 +64,10 @@
 
 <remove-project name="android_bionic" />
 <project path="bionic" name="android_bionic" remote="kscope-treble" revision="sunflowerleaf" />
+
+<remove-project name="android_system_nfc" />
+<project path="system/nfc" name="android_system_nfc" remote="kscope-treble" revision="sunflowerleaf" />
+
 <!-- End of Project-Kaleidoscope-Treble part -->
 
 </manifest>
